@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.tbmc.tp_android_3.POIMainActivity">
+
+    <ScrollView android:layout_width="368dp" android:layout_height="495dp" tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+        >
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Ceci est le label"
+                    android:hint="Label"
+                    android:ems="10"
+                    tools:layout_editor_absoluteY="63dp"
+                    android:id="@+id/editTextLabel"
+                    android:layout_marginBottom="10dp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:text="Ceci est une description.\nDescription"
+                    tools:layout_editor_absoluteY="119dp" tools:layout_editor_absoluteX="8dp" android:id="@+id/editTextDescription"
+                    android:hint="Description"
+                    android:layout_marginBottom="10dp"
+            />
+
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewLocation"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="30dp"
+            />
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBarScore"
+
+            />
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAddPoi"
+                    tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="8dp"
+                    android:text="BOUTON"
+                    android:layout_marginBottom="10dp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
