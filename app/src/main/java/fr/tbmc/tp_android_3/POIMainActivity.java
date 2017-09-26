@@ -60,7 +60,8 @@ public class POIMainActivity extends ListActivity
                 if(position == AdapterView.INVALID_POSITION)
                     return true;
                 poi = poiList.get(position);
-                String uri = "http://maps.google.com/maps?q=" + poi.getLatitude() + "," + poi.getLongitude() + "(" + poi.getLabel() + ")";
+                // String uri = "http://maps.google.com/maps?q=" + poi.getLatitude() + "," + poi.getLongitude() + "(" + poi.getLabel() + ")";
+                String uri = "geo:" + poi.getLatitude() + "," + poi.getLongitude();
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
                 return true;
